@@ -1,1 +1,69 @@
 // Navigation Styles here
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px silver dashed;
+    width: 100%;
+
+    .funbus {
+        border: 1px white solid;  
+        width: 30%;
+
+        @media @mobile {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+          }
+
+        @media @tablet {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        }
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px white solid;
+        width: 40%;
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            
+        }
+       
+        nav a {
+            text-decoration: none;
+            border: 1px white solid;
+            font-size: 1.4rem;
+            color: black;
+            
+        }
+    }
+
+    @media @tablet {
+        Display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .navigation {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            border: 1px white solid;
+            padding: 2% 0 1% 0;
+        }
+
+        .navigation nav a {
+            font-size: 1.8rem;
+            
+        }
+    }
+
+}
